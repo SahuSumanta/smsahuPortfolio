@@ -1,0 +1,196 @@
+<div class="relative min-h-screen">
+    <!-- 3D Background -->
+    <canvas #threeCanvas class="absolute inset-0 w-full h-full -z-0"></canvas>
+    
+    <!-- Content Overlay -->
+    <div class="container mx-auto px-4 pt-32 pb-20 min-h-screen flex flex-col justify-center">
+      <div class="max-w-1xl">
+        <!-- Introduction Text -->
+        <h1 class="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white mb-6 opacity-0" #introTitle>
+          Hello, I'm <span class="text-primary-600 dark:text-primary-400">Sumanta</span>
+        </h1>
+        
+        <h2 class="text-2xl md:text-3xl font-medium text-gray-700 dark:text-gray-300 mb-8 opacity-0" #introSubtitle>
+          Full Stack Developer
+        </h2>
+        
+        <p class="text-lg text-gray-600 dark:text-gray-400 mb-10 opacity-0" #introDescription>
+            Results-driven Angular Developer with 2.7+ years of experience in designing, developing, and optimizing dynamic
+            web applications. Proficient in Angular 10+, TypeScript, JavaScript, and modern front-end frameworks. Expertise
+            in state management using NgRx and Redux. Adept at implementing responsive designs, ensuring cross-browser
+            compatibility, and optimizing application performance. Strong problem-solving skills with expertise in UI/UX collaboration,
+            REST API integration, and DevOps workflows. Currently working on Nawat, a cloud provider architecture
+            for Aramco Digital, enabling the buying and selling of VM, storage, and other cloud services similar to AWS.
+        </p>
+        
+        <!-- CTA Buttons - Modern design -->
+        <div class="flex flex-wrap gap-4 mb-16 opacity-0" #introButtons>
+          <a routerLink="/projects" 
+             class="group relative px-8 py-4 bg-primary-600 overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-primary-500/30 hover:scale-105">
+            <span class="relative z-10 text-white font-medium">View My Work</span>
+            <span class="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-500 opacity-100 group-hover:opacity-90 transition-opacity"></span>
+            <span class="absolute bottom-0 left-0 h-1 w-full bg-white transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+          </a>
+          
+          <a routerLink="/contact" 
+             class="group relative px-8 py-4 overflow-hidden rounded-lg shadow-md border-2 border-primary-500 hover:border-primary-600 transition-all duration-300 hover:shadow-primary-500/20 hover:scale-105">
+            <span class="relative z-10 text-primary-600 dark:text-primary-400 font-medium group-hover:text-white dark:group-hover:text-white transition-colors duration-300">Contact Me</span>
+            <span class="absolute inset-0 bg-transparent group-hover:bg-primary-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+          </a>
+        </div>
+        
+        <!-- Skills Section with Icons -->
+        <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200 mb-6 opacity-0" #skillsTitle>My Skills</h3>
+        
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 opacity-0" #skillsGrid>
+          <!-- Frontend Skills -->
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fab fa-angular"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Angular</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fab fa-js"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">JavaScript</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fab fa-html5"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">HTML5</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fab fa-sass"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">SCSS/SASS</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fab fa-bootstrap"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Bootstrap</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">TypeScript</span>
+          </div>
+          
+          <!-- State Management -->
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-database"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">NgRx/Redux</span>
+          </div>
+          
+          <!-- Build Tools -->
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Webpack/Gulp</span>
+          </div>
+          
+          <!-- Backend -->
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fab fa-java"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Java/Spring</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-server"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">REST APIs</span>
+          </div>
+          
+          <!-- DevOps & CI/CD -->
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Git</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fab fa-docker"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Docker</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-dharmachakra"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Kubernetes</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-cog"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Jenkins</span>
+          </div>
+          
+          <!-- Database -->
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-database"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">MySQL</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">MongoDB</span>
+          </div>
+          
+          <!-- Other -->
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Agile/Scrum</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-vial"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Unit Testing</span>
+          </div>
+          
+          <div class="group flex flex-col items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 hover:translate-y-[-5px]">
+            <div class="text-primary-500 dark:text-primary-400 text-3xl mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-colors">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <span class="text-gray-800 dark:text-gray-200 font-medium text-center">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0" #scrollIndicator>
+      <span class="text-sm text-gray-600 dark:text-gray-400 mb-2">Scroll to explore</span>
+      <div class="w-6 h-10 border-2 border-gray-600 dark:border-gray-400 rounded-full flex justify-center pt-2">
+        <div class="w-1 h-2 bg-gray-600 dark:bg-gray-400 rounded-full animate-bounce"></div>
+      </div>
+    </div>
+  </div>
